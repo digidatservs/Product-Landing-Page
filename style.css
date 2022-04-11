@@ -1,0 +1,376 @@
+* {
+    box-sizing: border-box;
+}
+  
+html, 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    scroll-behavior: smooth;
+    background-color: rgba(243, 218, 148, 0.821);
+    min-width: 24rem;
+}
+
+#nav-bar {
+    background-color: rgb(54, 33, 9);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 6;
+    font-size: 0.8rem;
+}
+
+.nav-link {
+    color: rgb(255,255,255);
+    text-decoration: none;
+}
+
+#nav-bar, 
+.nav-link {
+    padding: 8px;
+}
+
+.nav-link:hover {
+    background-color: rgba(247, 203, 80, 0.821);
+    color: rgb(54, 33, 9);
+}
+
+#header-container, 
+#nav-bar, 
+#company-name, 
+label, 
+footer img {
+    display: inline-block;
+}
+
+h1, h2, p,
+#footer-name,
+.nav-link, 
+.text-services {
+    text-align: center;
+}
+
+#footer-name {
+    color: rgb(255,255,305);
+}
+
+#footer-link:link {
+    color: rgb(200, 166, 123);
+}
+
+#footer-link:visited {
+    color:rgb(167, 164, 154)    
+}
+
+h2 {
+    color: rgb(110, 56, 5);
+}
+
+#header-img,
+#company-name,
+#services-imgs,
+#media-title, 
+#media-frame,
+#contacts-form,
+footer,
+footer img  {
+    padding: 0.5rem;
+}
+
+#media-title, 
+#contacts-title,
+.services-imgs,
+iframe {
+    width: 100%;
+}    
+
+#header-container, 
+#nav-bar, 
+#company-name {
+    min-width: 100%;  
+}
+
+#company-name,
+#logo-container {
+    background-color: rgb(243, 236, 217);
+}
+
+#company-name {
+    color: rgb(97, 56, 9);
+}
+
+#logo-container,
+.services-imgs,
+#media-frame,
+footer {
+    position: relative;
+}
+
+#company-img,
+.overlay,
+iframe,
+.text-services {
+    position: absolute;
+}
+
+#logo-container {
+    max-height: 5%;
+    max-width: 5%;
+}
+
+#company-img {
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, 50%);
+    width: 2.5rem;
+    height: 2.5rem;
+    box-shadow: 0.4rem 0.4rem 0.4rem rgb(88, 52, 12);
+}
+
+#company-name {
+    z-index: 4;
+    max-height: 95%;
+    max-width: 95%;
+}
+
+#services-container {
+    background-color: rgb(134, 69, 8);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.services-imgs {
+    flex: 20%;
+}
+
+.cards {
+    width: 12rem;
+    height: 15.5rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgb(200, 166, 123);
+}
+
+.overlay {
+    width: 13rem;
+    height: 15.5rem; 
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease; 
+    background-color: rgb(249,168,86);
+}
+
+.services-imgs:hover .overlay {
+    opacity: 1;
+}
+  
+.text-services {
+    color: rgb(107, 67, 20);
+    font-size: 1.2rem;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#media-frame {
+    padding-top: 40%;
+    overflow: hidden;
+    border: 0.25rem solid rgb(187, 141, 67);
+}
+
+iframe {
+    top: 0;
+    left: 0;
+    height: 100%;
+    border: none;
+}
+
+#contacts-form {
+    background-color: rgb(233, 187, 59);
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+input[type=text], select, textarea {
+    width: 70%;
+    padding: 0.35rem;
+    border: 0.1rem solid rgb(190, 181, 158);
+    border-radius: 0.2rem;
+    resize: vertical;
+    margin-top: 1.2rem;
+    margin-left: 2.5rem;
+}
+  
+label {
+    padding: 1rem;
+}
+  
+input[type=submit] {
+    background-color:  rgba(247, 246, 242, 0.821);
+    color: rgb(14, 14, 13);
+    font-weight: bold;
+    width: 30%;
+    height: 15%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    margin-left: 40%;
+    margin-top: 0.5rem;
+}    
+  
+input[type=submit]:hover {
+    background-color: rgb(21,85,8);
+    color: rgba(246, 238, 215, 0.821);
+}
+
+.col-label {
+    float: left;
+    width: 25%;
+}
+  
+.col-input {
+    float: left;
+    width: 75%;
+}
+
+form input, 
+submit {
+    border-radius: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+label {
+    color: rgb(19, 20, 19);
+}
+
+label, submit {
+    line-height: 1.25rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+footer {
+    background-color: rgb(121, 77, 25);
+    height: 10%;
+}
+
+#header-img, footer img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+footer img {
+    margin-left: 17%;
+}   
+    
+footer {
+    font-size: 1rem;
+    color:rgba(243, 218, 148, 0.821);
+}
+
+.row::after {
+    display: table;
+    content: "";
+    clear: both; 
+}
+
+@media (max-width: 350px) {
+    #services-container {
+        flex: 100%;
+        width: 12rem;
+    }
+}
+
+@media (min-width: 350px) {
+    a, label  {
+        font-size: 1rem;
+    }
+
+    h1, .text-services {
+        font-size: 1.5rem; 
+    }
+
+    h2 {
+        font-size: 1.3rem    
+    } 
+
+    .cards {
+        width: 15rem;
+        height: 17rem;
+    }
+
+    .overlay {
+        width: 15.1rem;
+        height: 17rem;
+    }
+
+}   
+
+@media (min-width: 600px) {
+    label {
+        font-size: 1.3rem;
+    }
+
+    h1, .text-services {
+        font-size: 2rem; 
+    }
+
+    h2, a {
+        font-size: 1.7rem    
+    }  
+
+    #company-img {
+        transform: translate(25%, 25%);
+        width: 4rem;
+        height: 4rem;
+    }
+    
+    #company-name {
+        padding: 0.5rem;
+    }
+    
+    #header-img, footer img {
+        max-width: 4rem;
+        max-height: 4rem;
+        padding: 0rem;
+    }
+    
+    #navbar {
+        padding: 1rem;
+    }
+
+    .cards {
+        width: 18rem;
+        height: 22rem;
+    }
+
+    .overlay {
+        width: 18.1rem;
+        height: 22rem;
+    }
+
+    footer img {
+        margin-left: 25%;
+    }   
+        
+    footer p {
+        font-size: 1.5rem;
+    }
+}
+
+    
+
+
+
+
+    

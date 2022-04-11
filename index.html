@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Product Landing Page">
+    <meta name="keywords" content="html, css, product landing page">
+    <meta name="author" content="Michele Duarte">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".\style.css">
+    <title>Garden Flowers</title>
+  </head>
+  <body>
+    <div id="header-container">
+      <section id="menu">
+        <nav id="nav-bar">
+          <a class="nav-link" href="#menu">Home</a>
+          <a class="nav-link" href="#news">News</a>
+          <a class="nav-link" href="#contacts">Contact</a>
+          <a class="nav-link" href="#services">Services</a>
+        </nav>
+      </section> 
+    </div>
+    <div id="logo-container">
+      <figure>
+         <img id="company-img" src=".\images\logo_gardenflowers.png" alt="logo garden flowers">   
+       </figure>
+    </div>   
+    <div id="company-name">
+      <h1 id="menu">Golden Flowers</h1>
+    </div>  
+    <div id="services">
+        <section id="services-title">
+          <h2>Our Services</h2>
+        </section>
+    </div>
+    <div id="services-container">
+            <div class="services-imgs">
+              <img class="cards" src=".\images\pexels-edu-carvalho-2050994.jpg" alt="A woman around for yellow flowers">
+                <div class="overlay">    
+                  <div class="text-services">Landscape</div>
+                </div>     
+            </div>
+            <div class="services-imgs">
+              <img class="cards" src=".\images\pexels-secret-garden-931176.jpg" alt="A people holding bouquet of pink roses">
+                <div class="overlay">    
+                  <div class="text-services">Decorative Gifts</div>
+                </div>     
+            </div> 
+            <div class="services-imgs">
+              <img class="cards" src=".\images\pexels-secret-garden-931154.jpg" alt="A people carrying miscellaneous flower vase">
+                <div class="overlay">        
+                  <div class="text-services">Bouquets and Arrangements</div>
+                </div>
+            </div> 
+            <div class="services-imgs">
+              <img class="cards" src=".\images\pexels-lilartsy-1624076.jpg" alt="A people holding a sunflower in the meadow">
+                <div class="overlay">        
+                  <div class="text-services">Gardening</div>
+                </div>
+            </div>        
+            <div class="services-imgs">
+              <img class="cards" src=".\images\pexels-valeriia-miller-3599576.jpg" alt="A yellow bicycle with basket full of yellow flowers">
+                <div class="overlay">
+                  <div class="text-services">Deliveries in our Region</div>
+                </div>
+            </div> 
+    </div>
+    <div id="media-title">
+              <section id="news"> 
+                <h2>News For You</h2>
+              </section> 
+    </div> 
+            <div id="media-frame">       
+              <iframe id="video" src="https://www.youtube.com/embed/L2O48a9p-Nc" 
+              title="YouTube video player with examples of gardening projects" frameborder="0" allow="accelerometer; autoplay; 
+              clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+             </iframe>
+    </div> 
+    <div id="contacts-title">
+              <section id="contacts">
+              <h2>Our Contact</h2>
+              </section>
+    </div> 
+    <div id="contacts-form">
+        <form action="">
+            <div class="row">
+                <div class="col-label">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="col-input">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-label">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col-input">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-label">
+                    <label for="country">Country</label>
+                </div>
+                <div class="col-input">
+                    <select id="country" name="country">
+                      <option value="australia">Australia</option>
+                      <option value="brazil">Brazil</option>
+                      <option value="canada">Canada</option>
+                      <option value="german">German</option>
+                      <option value="japan">Japan</option>
+                      <option value="mexico">Mexico</option>
+                      <option value="usa">USA</option>
+                   </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-label">
+                    <label for="message">Message</label>
+                </div>
+                <div class="col-input">
+                    <textarea id="message" name="message" placeholder="Your message.." ></textarea>
+                </div>
+            </div>
+            <div class="row">
+                  <input type="submit" value="SUBMIT">
+            </div>
+        </form>
+    </div>
+    <footer>
+      <span class="media-icons">
+        <a target="_blank" href="https://www.facebook.com">
+        <img src="\icons\facebook.png"></a>
+      </span>
+      <span class="media-icons">
+        <a target="_blank" href="https://www.instagram.com">
+        <img src="\icons\instagram.png"></a>  
+      </span>
+      <span class="media-icons">
+        <a target="_blank" href="https://www.whatsapp.com">
+        <img src="\icons\whatsapp.png"></a>
+      </span>
+      <p><i>Credits for images:</i></p>
+      <p><a id="footer-link" rel="external" href="https://www.pexels.com/pt-br/" target="_blank">Pexels</a></p>
+      <p><i>Authors: edu-carvalho,secret-garden,lilartsy,valeriia-miller</i></p>
+      <p id="footer-name">Golden Flowers - Copyright 2021</p>
+    </footer>
+  </body>
+</html>
